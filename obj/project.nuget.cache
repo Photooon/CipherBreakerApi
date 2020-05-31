@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "0NMPexoTi/Xr0Ze2nOL6WRTvntTYHWEnE9tCaWrd2O+s1SqwGauKPR2RgrXBfPSPcCSzBJSUMpxHjgBq0tAg9Q==",
-=======
-  "dgSpecHash": "+9tQ6TB+ACkETx6NDpsMbyb6PHTmeN6TTxeOwB8QvYUUDt4QhncDrAUtX5fTNJAOEHA5WqhLwB0A7GTy980iAQ==",
->>>>>>> f579232509540dfbea651d10ea790ba21d8b6575
+  "dgSpecHash": "C6O2OdFOUt8lO9lUlwP17vEqEIerjy7Kfm8y5SuTc11e1nL8LX699nJwVB8c6HMj+21OiYkMuo4dIDg03B4mRg==",
   "success": true,
   "projectFilePath": "/home/morty/seesharp/CipherBreakerApi/CipherBreakerApi.csproj",
   "expectedPackageFiles": [
@@ -38,15 +34,9 @@
     "/root/.nuget/packages/sqlitepclraw.provider.dynamic_cdecl/2.0.2/sqlitepclraw.provider.dynamic_cdecl.2.0.2.nupkg.sha512",
     "/root/.nuget/packages/system.collections.immutable/1.7.0/system.collections.immutable.1.7.0.nupkg.sha512",
     "/root/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "/root/.nuget/packages/system.data.sqlite.core/1.0.112.2/system.data.sqlite.core.1.0.112.2.nupkg.sha512",
     "/root/.nuget/packages/system.diagnostics.diagnosticsource/4.7.0/system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
     "/root/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /home/morty/seesharp/CipherBreakerApi/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
