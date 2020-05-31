@@ -155,3 +155,12 @@ F:\Code Manager\CipherBreaker\CipherBreakerApi\obj\Debug\netcoreapp3.1\CipherBre
 F:\Code Manager\CipherBreaker\CipherBreakerApi\obj\Debug\netcoreapp3.1\CipherBreakerApi.pdb
 F:\Code Manager\CipherBreaker\CipherBreakerApi\obj\Debug\netcoreapp3.1\CipherBreakerApi.genruntimeconfig.cache
 >>>>>>> f579232509540dfbea651d10ea790ba21d8b6575
+F:\Code Manager\CipherBreaker\CipherBreakerApi\bin\Debug\netcoreapp3.1\System.Data.SQLite.dll
+F:\Code Manager\CipherBreaker\CipherBreakerApi\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\netstandard2.0\SQLite.Interop.dll
+F:\Code Manager\CipherBreaker\CipherBreakerApi\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\netstandard2.1\SQLite.Interop.dll
+F:\Code Manager\CipherBreaker\CipherBreakerApi\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\netstandard2.0\SQLite.Interop.dll
+F:\Code Manager\CipherBreaker\CipherBreakerApi\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\netstandard2.1\SQLite.Interop.dll
+F:\Code Manager\CipherBreaker\CipherBreakerApi\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\netstandard2.0\SQLite.Interop.dll
+F:\Code Manager\CipherBreaker\CipherBreakerApi\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\netstandard2.1\SQLite.Interop.dll
+F:\Code Manager\CipherBreaker\CipherBreakerApi\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\netstandard2.0\SQLite.Interop.dll
+F:\Code Manager\CipherBreaker\CipherBreakerApi\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\netstandard2.1\SQLite.Interop.dll
