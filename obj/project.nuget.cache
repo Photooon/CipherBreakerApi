@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "0NMPexoTi/Xr0Ze2nOL6WRTvntTYHWEnE9tCaWrd2O+s1SqwGauKPR2RgrXBfPSPcCSzBJSUMpxHjgBq0tAg9Q==",
+=======
+  "dgSpecHash": "+9tQ6TB+ACkETx6NDpsMbyb6PHTmeN6TTxeOwB8QvYUUDt4QhncDrAUtX5fTNJAOEHA5WqhLwB0A7GTy980iAQ==",
+>>>>>>> f579232509540dfbea651d10ea790ba21d8b6575
   "success": true,
   "projectFilePath": "/home/morty/seesharp/CipherBreakerApi/CipherBreakerApi.csproj",
   "expectedPackageFiles": [
