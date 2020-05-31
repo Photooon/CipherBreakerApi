@@ -1,8 +1,6 @@
 ﻿using Microsoft.Data.Sqlite;
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Windows.Media.TextFormatting;
 
 namespace CipherBreaker.Store
 {
