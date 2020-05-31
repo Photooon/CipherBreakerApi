@@ -10,37 +10,77 @@ using CipherBreaker;
 namespace CipherBreakerApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]/api")]
     public class CipherBreakerController : ControllerBase
     {
         private readonly WordFrequencyContext wordFrequencyDb;
 
-        // public CipherBreakerController(WordFrequencyContext context)    //这里利用Asp.net core框架自动注入Context对象
-        // {
-        //     this.wordFrequencyDb = context;
-        // }
-
-        //GET: api/cipherbreaker/encrypt?encryptMethod=加密方法&string=字符串&key=密钥
-        [HttpGet]
-        [Route("encrypt")]
-        public ActionResult<string> GetEncrypt(string encryptMethod, string str, string key)
+        public CipherBreakerController(WordFrequencyContext context)    //这里利用Asp.net core框架自动注入Context对象
         {
-            if (encryptMethod == "caesar")
-            {
-                Caesar caesar = new Caesar();
-                
-                var result = caesar.Encode(str, key);
-
-                if (result.Item2 == true) 
-                {
-                    return result.Item1;
-                }
-            }
-            
-            return "The price of the shirt is nine pounds and fifteen pence.";
+            this.wordFrequencyDb = context;
         }
 
-        //POST: api/cipherbreaker/encrypt
+        //GET: cipherbreaker/api/encrypt?method=加密方法&str=字符串&key=密钥
+        [HttpGet]
+        [Route("encrypt")]
+        public ActionResult<string> GetEncrypt(string method, string str, string key)
+        {
+            try
+            {
+                if (method == "caesar")
+                {
+                    Caesar caesar = new Caesar();
+                    
+                    var result = caesar.Encode(str, key);
+
+                    if (result.Item2 == true) 
+                    {
+                        return result.Item1;
+                    }
+                }
+                else if (method == "railfence")
+                {
+                    RailFence railFence = new RailFence();
+
+                    var result = railFence.Encode(str, key);
+
+                    if (result.Item2 == true)
+                    {
+                        return result.Item1;
+                    }
+                }
+                else if (method == "affine")
+                {
+                    Affine affine = new Affine();
+
+                    var result = affine.Encode(str, key);
+
+                    if (result.Item2 == true)
+                    {
+                        return result.Item1;
+                    }
+                }
+                else if (method == "substitution")
+                {
+                    Substitution substitution = new Substitution();
+
+                    var result = substitution.Encode(str, key);
+
+                    if (result.Item2 == true)
+                    {
+                        return result.Item1;
+                    }
+                }
+            }
+            catch (System.Exception e)
+            {
+                return e.Message;
+            }
+
+            return "No such method!";
+        }
+
+        //POST: cipherbreaker/api/encrypt
         [HttpPost]
         [Route("encrypt")]
         public ActionResult<string> PostEncrypt(EncryptItem item)
@@ -48,15 +88,67 @@ namespace CipherBreakerApi.Controllers
             return item.str + item.encryptMethod;
         }
 
-        //GET: api/cipherbreaker/decrypt?str=字符串&encrypt_method=解密方法&key=密钥
+        //GET: cipherbreaker/api/decrypt?method=解密方法&str=字符串&key=密钥
         [HttpGet]
         [Route("decrypt")]
-        public ActionResult<string> GetDecrypt(string str, string encryptMethod, string key)
+        public ActionResult<string> GetDecrypt(string method, string str, string key)
         {
-            return str + encryptMethod + key;
+           try
+            {
+                if (method == "caesar")
+                {
+                    Caesar caesar = new Caesar();
+                    
+                    var result = caesar.Decode(str, key);
+
+                    if (result.Item2 == true) 
+                    {
+                        return result.Item1;
+                    }
+                }
+                else if (method == "railfence")
+                {
+                    RailFence railFence = new RailFence();
+
+                    var result = railFence.Decode(str, key);
+
+                    if (result.Item2 == true)
+                    {
+                        return result.Item1;
+                    }
+                }
+                else if (method == "affine")
+                {
+                    Affine affine = new Affine();
+
+                    var result = affine.Decode(str, key);
+
+                    if (result.Item2 == true)
+                    {
+                        return result.Item1;
+                    }
+                }
+                else if (method == "substitution")
+                {
+                    Substitution substitution = new Substitution();
+
+                    var result = substitution.Decode(str, key);
+
+                    if (result.Item2 == true)
+                    {
+                        return result.Item1;
+                    }
+                }
+            }
+            catch (System.Exception e)
+            {
+                return e.Message;
+            }
+
+            return "No such method!";
         }
 
-        //POST: api/cipherbreaker/decrypt
+        //POST: cipherbreaker/api/decrypt
         [HttpPost]
         [Route("decrypt")]
         public ActionResult<string> PostDecrypt(DecryptItem item)
@@ -64,15 +156,55 @@ namespace CipherBreakerApi.Controllers
             return "Wait to finish";
         }
 
-        //GET: api/cipherbreaker/break?str=字符串
+        //GET: cipherbreaker/api/break?method=破解方法&str=字符串
         [HttpGet]
         [Route("break")]
-        public ActionResult<string> GetBreak(string str)
+        public ActionResult<string> GetBreak(string method, string str)
         {
-            return str;
+            try
+            {
+                if (method == "caesar")
+                {
+                    Caesar caesar = new Caesar();
+                    
+                    var result = caesar.Break(str);
+
+                    return result.Item1 + "," + result.Item2.ToString();
+                }
+                else if (method == "railfence")
+                {
+                    RailFence railFence = new RailFence();
+
+                    var result = railFence.Break(str);
+
+                    return result.Item1 + "," + result.Item2.ToString();
+                }
+                else if (method == "affine")
+                {
+                    Affine affine = new Affine();
+
+                    var result = affine.Break(str);
+
+                    return result.Item1 + "," + result.Item2.ToString();
+                }
+                else if (method == "substitution")
+                {
+                    Substitution substitution = new Substitution();
+
+                    var result = substitution.Break();
+
+                    return result.Item1 + "," + result.Item2.ToString();
+                }
+            }
+            catch (System.Exception e)
+            {
+                return e.Message;
+            }
+
+            return "No such method!";
         }
 
-        //GET: api/cipherbreaker/wordfreq
+        //GET: cipherbreaker/api/wordfreq
         [HttpGet]
         [Route("wordfreq")]
         public ActionResult<string> GetWordFrequency()
