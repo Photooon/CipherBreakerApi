@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Code Manager\\CipherBreaker\\CipherBreakerApi\\CipherBreakerApi.csproj": {}
+    "/home/morty/seesharp/CipherBreakerApi/CipherBreakerApi.csproj": {}
   },
   "projects": {
-    "F:\\Code Manager\\CipherBreaker\\CipherBreakerApi\\CipherBreakerApi.csproj": {
+    "/home/morty/seesharp/CipherBreakerApi/CipherBreakerApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Code Manager\\CipherBreaker\\CipherBreakerApi\\CipherBreakerApi.csproj",
+        "projectUniqueName": "/home/morty/seesharp/CipherBreakerApi/CipherBreakerApi.csproj",
         "projectName": "CipherBreakerApi",
-        "projectPath": "F:\\Code Manager\\CipherBreaker\\CipherBreakerApi\\CipherBreakerApi.csproj",
-        "packagesPath": "C:\\Users\\15278\\.nuget\\packages\\",
-        "outputPath": "F:\\Code Manager\\CipherBreaker\\CipherBreakerApi\\obj\\",
+        "projectPath": "/home/morty/seesharp/CipherBreakerApi/CipherBreakerApi.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/home/morty/seesharp/CipherBreakerApi/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\15278\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,6 +43,10 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[*, )"
             }
           },
           "imports": [
@@ -70,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/dotnet/sdk/3.1.300/RuntimeIdentifierGraph.json"
         }
       }
     }

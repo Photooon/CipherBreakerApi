@@ -1,3 +1,82 @@
+<<<<<<< HEAD
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/appsettings.Development.json
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/appsettings.json
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/CipherBreakerApi.exe
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/CipherBreakerApi.deps.json
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/CipherBreakerApi.runtimeconfig.json
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/CipherBreakerApi.runtimeconfig.dev.json
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/CipherBreakerApi.dll
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/CipherBreakerApi.pdb
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/MySqlConnector.dll
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/bin/Debug/netcoreapp3.1/Pomelo.JsonObject.dll
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.csprojAssemblyReference.cache
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.csproj.CoreCompileInputs.cache
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.MvcApplicationPartsAssemblyInfo.cache
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.AssemblyInfoInputs.cache
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.AssemblyInfo.cs
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.RazorTargetAssemblyInfo.cache
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.csproj.CopyComplete
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/obj/Debug/netcoreapp3.1/staticwebassets/CipherBreakerApi.StaticWebAssets.Manifest.cache
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/obj/Debug/netcoreapp3.1/staticwebassets/CipherBreakerApi.StaticWebAssets.xml
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.dll
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.pdb
+F:/Code Manager/CSharp/webapi/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.genruntimeconfig.cache
+/home/morty/seesharp/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.csprojAssemblyReference.cache
+/home/morty/seesharp/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.AssemblyInfoInputs.cache
+/home/morty/seesharp/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.AssemblyInfo.cs
+/home/morty/seesharp/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.csproj.CoreCompileInputs.cache
+/home/morty/seesharp/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.MvcApplicationPartsAssemblyInfo.cache
+/home/morty/seesharp/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.dll
+/home/morty/seesharp/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.pdb
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/appsettings.json
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/CipherBreakerApi
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/CipherBreakerApi.deps.json
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/CipherBreakerApi.runtimeconfig.json
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/CipherBreakerApi.runtimeconfig.dev.json
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/CipherBreakerApi.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/CipherBreakerApi.pdb
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/MySqlConnector.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/Pomelo.JsonObject.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/runtimes/alpine-x64/native/libe_sqlite3.so
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/runtimes/linux-arm/native/libe_sqlite3.so
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/runtimes/linux-arm64/native/libe_sqlite3.so
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/runtimes/linux-armel/native/libe_sqlite3.so
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/runtimes/linux-musl-x64/native/libe_sqlite3.so
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libe_sqlite3.so
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/runtimes/linux-x86/native/libe_sqlite3.so
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libe_sqlite3.dylib
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/e_sqlite3.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
+/home/morty/seesharp/CipherBreakerApi/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+/home/morty/seesharp/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.RazorTargetAssemblyInfo.cache
+/home/morty/seesharp/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.csproj.CopyComplete
+/home/morty/seesharp/CipherBreakerApi/obj/Debug/netcoreapp3.1/staticwebassets/CipherBreakerApi.StaticWebAssets.Manifest.cache
+/home/morty/seesharp/CipherBreakerApi/obj/Debug/netcoreapp3.1/staticwebassets/CipherBreakerApi.StaticWebAssets.xml
+/home/morty/seesharp/CipherBreakerApi/obj/Debug/netcoreapp3.1/CipherBreakerApi.genruntimeconfig.cache
+=======
 F:\Code Manager\CSharp\webapi\CipherBreakerApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
 F:\Code Manager\CSharp\webapi\CipherBreakerApi\bin\Debug\netcoreapp3.1\appsettings.json
 F:\Code Manager\CSharp\webapi\CipherBreakerApi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -75,3 +154,4 @@ F:\Code Manager\CipherBreaker\CipherBreakerApi\obj\Debug\netcoreapp3.1\staticweb
 F:\Code Manager\CipherBreaker\CipherBreakerApi\obj\Debug\netcoreapp3.1\CipherBreakerApi.dll
 F:\Code Manager\CipherBreaker\CipherBreakerApi\obj\Debug\netcoreapp3.1\CipherBreakerApi.pdb
 F:\Code Manager\CipherBreaker\CipherBreakerApi\obj\Debug\netcoreapp3.1\CipherBreakerApi.genruntimeconfig.cache
+>>>>>>> f579232509540dfbea651d10ea790ba21d8b6575
