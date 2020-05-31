@@ -6,7 +6,7 @@ namespace CipherBreaker.Store
 {
 	class SqliteClient : SqliteConnection
 	{
-		const string WordFrequencyTableName = "word_frequency";
+		const string WordFrequencyTableName = "wordfreq";
 		const string OperationRecordTableName = "operation_record";
 
 		public SqliteClient(string connectionString) : base(connectionString) { }
