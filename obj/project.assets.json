@@ -1112,7 +1112,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Microsoft.Data.Sqlite >= *",
+      "Microsoft.Data.Sqlite >= 3.1.4",
       "Pomelo.EntityFrameworkCore.MySql >= 3.1.1"
     ]
   },
@@ -1162,7 +1162,7 @@
         "dependencies": {
           "Microsoft.Data.Sqlite": {
             "target": "Package",
-            "version": "[*, )"
+            "version": "[3.1.4, )"
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",

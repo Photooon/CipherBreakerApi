@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CipherBreakerApi.Models;
+using CipherBreaker;
 
 namespace CipherBreakerApi.Controllers
 {
@@ -19,12 +20,24 @@ namespace CipherBreakerApi.Controllers
         //     this.wordFrequencyDb = context;
         // }
 
-        //GET: api/cipherbreaker/encrypt?string=字符串&encryptMethod=加密方法
+        //GET: api/cipherbreaker/encrypt?encryptMethod=加密方法&string=字符串&key=密钥
         [HttpGet]
         [Route("encrypt")]
-        public ActionResult<string> GetEncrypt(string str, string encryptMethod)
+        public ActionResult<string> GetEncrypt(string encryptMethod, string str, string key)
         {
-            return str + encryptMethod;
+            if (encryptMethod == "caesar")
+            {
+                Caesar caesar = new Caesar();
+                
+                var result = caesar.Encode(str, key);
+
+                if (result.Item2 == true) 
+                {
+                    return result.Item1;
+                }
+            }
+            
+            return "The price of the shirt is nine pounds and fifteen pence.";
         }
 
         //POST: api/cipherbreaker/encrypt
