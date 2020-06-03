@@ -15,10 +15,10 @@ namespace CipherBreakerApi.Controllers
     {
         private readonly WordFrequencyContext wordFrequencyDb;
 
-        // public CipherBreakerController(WordFrequencyContext context)    //这里利用Asp.net core框架自动注入Context对象
-        // {
-        //     this.wordFrequencyDb = context;
-        // }
+        public CipherBreakerController(WordFrequencyContext context)    //这里利用Asp.net core框架自动注入Context对象
+        {
+            this.wordFrequencyDb = context;
+        }
 
         //GET: cipherbreaker/api/encrypt?method=加密方法&str=字符串&key=密钥
         [HttpGet]
