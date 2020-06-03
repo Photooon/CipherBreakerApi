@@ -2,7 +2,7 @@ namespace CipherBreakerApi.Models
 {
     public class EncryptItem
     {
-        public string encryptMethod{ get; set; }
+        public string method{ get; set; }
 
         public string str{ get; set; }
 
@@ -11,10 +11,17 @@ namespace CipherBreakerApi.Models
 
     public class DecryptItem
     {
-        public string decryptMethod{ get; set; }
+        public string method{ get; set; }
 
         public string str{ get; set; }
 
         public string key{ get; set; }
+    }
+
+    public class BreakItem
+    {
+        public string method{ get; set; }
+
+        public string str{ get; set; }
     }
 }

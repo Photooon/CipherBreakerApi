@@ -85,7 +85,7 @@ namespace CipherBreakerApi.Controllers
         [Route("encrypt")]
         public ActionResult<string> PostEncrypt(EncryptItem item)
         {
-            return item.str + item.encryptMethod;
+            return GetEncrypt(item.method, item.str, item.key);
         }
 
         //GET: cipherbreaker/api/decrypt?method=解密方法&str=字符串&key=密钥
@@ -153,7 +153,7 @@ namespace CipherBreakerApi.Controllers
         [Route("decrypt")]
         public ActionResult<string> PostDecrypt(DecryptItem item)
         {
-            return "Wait to finish";
+            return GetDecrypt(item.method, item.str, item.key);
         }
 
         //GET: cipherbreaker/api/break?method=破解方法&str=字符串
@@ -202,6 +202,14 @@ namespace CipherBreakerApi.Controllers
             }
 
             return "No such method!";
+        }
+
+        //POST: cipherbreaker/api/break
+        [HttpPost]
+        [Route("break")]
+        public ActionResult<string> PostBreak(BreakItem item)
+        {
+            return GetBreak(item.method, item.str);
         }
 
         //GET: cipherbreaker/api/wordfreq
