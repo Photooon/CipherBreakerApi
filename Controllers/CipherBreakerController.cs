@@ -404,7 +404,8 @@ namespace CipherBreakerApi.Controllers
                     BreakItem breakItem = new BreakItem();
                     breakItem.method = method;
                     breakItem.str = str;
-                    breakItem.result = result;
+                    breakItem.result_str = result.Item1;
+                    breakItem.result_prob = result.Item2;
                     context.BreakItems.Add(breakItem);
                     context.SaveChanges();
 
@@ -419,7 +420,8 @@ namespace CipherBreakerApi.Controllers
                     BreakItem breakItem = new BreakItem();
                     breakItem.method = method;
                     breakItem.str = str;
-                    breakItem.result = result;
+                    breakItem.result_str = result.Item1;
+                    breakItem.result_prob = result.Item2;
                     context.BreakItems.Add(breakItem);
                     context.SaveChanges();
 
@@ -434,7 +436,8 @@ namespace CipherBreakerApi.Controllers
                     BreakItem breakItem = new BreakItem();
                     breakItem.method = method;
                     breakItem.str = str;
-                    breakItem.result = result;
+                    breakItem.result_str = result.Item1;
+                    breakItem.result_prob = result.Item2;
                     context.BreakItems.Add(breakItem);
                     context.SaveChanges();
 
@@ -449,7 +452,8 @@ namespace CipherBreakerApi.Controllers
                     BreakItem breakItem = new BreakItem();
                     breakItem.method = method;
                     breakItem.str = str;
-                    breakItem.result = result;
+                    breakItem.result_str = result.Item1;
+                    breakItem.result_prob = result.Item2;
                     context.BreakItems.Add(breakItem);
                     context.SaveChanges();
 
@@ -480,7 +484,8 @@ namespace CipherBreakerApi.Controllers
                     BreakItem breakItem = new BreakItem();
                     breakItem.method = method;
                     breakItem.str = str;
-                    breakItem.result = result;
+                    breakItem.result_str = result.Item1;
+                    breakItem.result_prob = result.Item2;
                     context.BreakItems.Add(breakItem);
                     context.SaveChanges();
 
@@ -495,7 +500,8 @@ namespace CipherBreakerApi.Controllers
                     BreakItem breakItem = new BreakItem();
                     breakItem.method = method;
                     breakItem.str = str;
-                    breakItem.result = result;
+                    breakItem.result_str = result.Item1;
+                    breakItem.result_prob = result.Item2;
                     context.BreakItems.Add(breakItem);
                     context.SaveChanges();
 
@@ -510,7 +516,8 @@ namespace CipherBreakerApi.Controllers
                     BreakItem breakItem = new BreakItem();
                     breakItem.method = method;
                     breakItem.str = str;
-                    breakItem.result = result;
+                    breakItem.result_str = result.Item1;
+                    breakItem.result_prob = result.Item2;
                     context.BreakItems.Add(breakItem);
                     context.SaveChanges();
 
@@ -525,7 +532,8 @@ namespace CipherBreakerApi.Controllers
                     BreakItem breakItem = new BreakItem();
                     breakItem.method = method;
                     breakItem.str = str;
-                    breakItem.result = result;
+                    breakItem.result_str = result.Item1;
+                    breakItem.result_prob = result.Item2;
                     context.BreakItems.Add(breakItem);
                     context.SaveChanges();
 
