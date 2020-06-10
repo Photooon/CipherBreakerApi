@@ -41,8 +41,6 @@ namespace CipherBreakerApi.Controllers
                         encryptItem.key = key;
                         encryptItem.result = result.Item1;
 
-                        return encryptItem.method + encryptItem.str + encryptItem.key + encryptItem.result;
-
                         context.EncryptItems.Add(encryptItem);
                         context.SaveChanges();
 

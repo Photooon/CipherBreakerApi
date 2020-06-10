@@ -1,5 +1,5 @@
 {
-  "FilePath": "f:\\Code Manager\\CipherBreaker\\CipherBreakerApi\\CipherBreakerApi.csproj",
+  "FilePath": "/Users/jiaxy/workspace/netcore/TodoApi/TodoApi.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20518,7 +20518,7 @@
     ],
     "CSharpLanguageVersion": 800
   },
-  "RootNamespace": "CipherBreakerApi",
+  "RootNamespace": "TodoApi",
   "Documents": [],
   "SerializationFormat": "0.2"
 }
