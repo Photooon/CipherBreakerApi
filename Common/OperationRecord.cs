@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CipherBreaker
+namespace CipherBreakerApi
 {
 	enum OperationType : int
 	{

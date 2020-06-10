@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CipherBreaker
+namespace CipherBreakerApi
 {
 	class Affine : SymmetricScheme
 	{
@@ -14,7 +14,7 @@ namespace CipherBreaker
 				key = this.Key;
 			}
 
-			string[] ab = key.Split(',');   //"a,b"£¬¸ù¾Ý¶ººÅ·Ö¸î×Ö·û´®key£¬µÚÒ»¸öÊýÎª³ËÊý£¬µÚ¶þ¸öÊýÎª¼ÓÊý0
+			string[] ab = key.Split(',');   //"a,b"ï¿½ï¿½ï¿½ï¿½ï¿½Ý¶ï¿½ï¿½Å·Ö¸ï¿½ï¿½Ö·ï¿½ï¿½ï¿½keyï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½0
 			int aInt = int.Parse(ab[0]);
 			return NumberTheory.Gcd(aInt, Scheme.LetterSetSize) == 1;
 		}
@@ -56,7 +56,7 @@ namespace CipherBreaker
 				return (null, false);
 			}
 
-			string[] ab = key.Split(',');   //"a,b"£¬¸ù¾Ý¶ººÅ·Ö¸î×Ö·û´®key£¬µÚÒ»¸öÊýÎª³ËÊý£¬µÚ¶þ¸öÊýÎª¼ÓÊý0
+			string[] ab = key.Split(',');   //"a,b"ï¿½ï¿½ï¿½ï¿½ï¿½Ý¶ï¿½ï¿½Å·Ö¸ï¿½ï¿½Ö·ï¿½ï¿½ï¿½keyï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½0
 			int aInt = int.Parse(ab[0]);
 			int bInt = int.Parse(ab[1]);
 			string cipher = "";
@@ -97,7 +97,7 @@ namespace CipherBreaker
 				return (null, false);
 			}
 
-			string[] ab = key.Split(',');   //"a,b"£¬¸ù¾Ý¶ººÅ·Ö¸î×Ö·û´®key£¬µÚÒ»¸öÊýÎª³ËÊý£¬µÚ¶þ¸öÊýÎª¼ÓÊý0
+			string[] ab = key.Split(',');   //"a,b"ï¿½ï¿½ï¿½ï¿½ï¿½Ý¶ï¿½ï¿½Å·Ö¸ï¿½ï¿½Ö·ï¿½ï¿½ï¿½keyï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½0
 			int aInt = int.Parse(ab[0]);
 			int bInt = int.Parse(ab[1]);
 			string plain = "";
@@ -106,7 +106,7 @@ namespace CipherBreaker
 				int p = c;
 				if (c >= 'a' && c <= 'z')
 				{
-					if (NumberTheory.Gcd(aInt, Scheme.LetterSetSize) == 1)  //Ö»ÓÐµ± a Óë n »¥ËØµÄÊ±ºò, a ²ÅÊÇÓÐÄ£ÄæµÄ
+					if (NumberTheory.Gcd(aInt, Scheme.LetterSetSize) == 1)  //Ö»ï¿½Ðµï¿½ a ï¿½ï¿½ n ï¿½ï¿½ï¿½Øµï¿½Ê±ï¿½ï¿½, a ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½
 					{
 						int cInt = (int)NumberTheory.Inverse(aInt, Scheme.LetterSetSize);
 						p = (((c - 'a' - bInt) * cInt) % Scheme.LetterSetSize) + 'a';
@@ -114,7 +114,7 @@ namespace CipherBreaker
 				}
 				else if (c >= 'A' && c <= 'Z')
 				{
-					if (NumberTheory.Gcd(aInt, Scheme.LetterSetSize) == 1)  //Ö»ÓÐµ± a Óë n »¥ËØµÄÊ±ºò, a ²ÅÊÇÓÐÄ£ÄæµÄ
+					if (NumberTheory.Gcd(aInt, Scheme.LetterSetSize) == 1)  //Ö»ï¿½Ðµï¿½ a ï¿½ï¿½ n ï¿½ï¿½ï¿½Øµï¿½Ê±ï¿½ï¿½, a ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½
 					{
 						int cInt = (int)NumberTheory.Inverse(aInt, Scheme.LetterSetSize);
 						p = (((c - 'A' - bInt) * cInt) % Scheme.LetterSetSize) + 'A';

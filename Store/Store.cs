@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace CipherBreaker.Store
+namespace CipherBreakerApi.Store
 {
 	class SqliteClient : SqliteConnection
 	{

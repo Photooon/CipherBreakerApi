@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 
-namespace CipherBreaker
+namespace CipherBreakerApi
 {
 	abstract class SymmetricScheme : Scheme
 	{

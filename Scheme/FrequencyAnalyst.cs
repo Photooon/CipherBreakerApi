@@ -5,10 +5,10 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows;
-using CipherBreaker.Store;
+using CipherBreakerApi.Store;
 using Microsoft.Data.Sqlite;
 
-namespace CipherBreaker
+namespace CipherBreakerApi
 {
 	class FrequencyAnalyst
 	{
