@@ -10,11 +10,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using TodoApi.Models;
+using CipherBreakerApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
-namespace TodoApi
+namespace CipherBreakerApi
 {
     public class Startup
     {
@@ -28,7 +28,7 @@ namespace TodoApi
         public void ConfigureServices(IServiceCollection services){
             //services中存放了一组对象，包括DbContext对象、Controller对象等,用于依赖注入
 
-             services.AddDbContextPool<TodoContext>(options => options
+             services.AddDbContextPool<CBContext>(options => options
                 // 连接字符串"cbDatabase" 可以在appsetting.json中设置
                 .UseMySql(Configuration.GetConnectionString("cbDatabase"), 
                     mySqlOptions => mySqlOptions
