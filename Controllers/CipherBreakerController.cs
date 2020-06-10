@@ -272,11 +272,8 @@ namespace CipherBreakerApi.Controllers
             encryptItem.result = result;
             encryptItem.datetime = DateTime.Now.ToString();
 
-            if (!context.EncryptItems.Contains(encryptItem))        //防止写入已有数据
-            {
-                context.EncryptItems.Add(encryptItem);
-                context.SaveChanges();
-            }
+            context.EncryptItems.Add(encryptItem);
+            context.SaveChanges();
         }
 
         private void SaveDecryptItems(string method, string str, string key, string result)
@@ -288,11 +285,8 @@ namespace CipherBreakerApi.Controllers
             decryptItem.result = result;
             decryptItem.datetime = DateTime.Now.ToString();
 
-            if (!context.DecryptItems.Contains(decryptItem))
-            {
-                context.DecryptItems.Add(decryptItem);
-                context.SaveChanges();
-            }
+            context.DecryptItems.Add(decryptItem);
+            context.SaveChanges();
         }
 
         private void SaveBreakItems(string method, string str, string result_str, double result_prob)
@@ -304,11 +298,8 @@ namespace CipherBreakerApi.Controllers
             breakItem.result_prob = result_prob;
             breakItem.datetime = DateTime.Now.ToString();
 
-            if (!context.BreakItems.Contains(breakItem))
-            {
-                context.BreakItems.Add(breakItem);
-                context.SaveChanges();
-            }
+            context.BreakItems.Add(breakItem);
+            context.SaveChanges();
         }
     }
 }
