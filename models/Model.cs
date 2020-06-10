@@ -15,6 +15,8 @@ namespace CipherBreakerApi.Models
         public string key{ get; set; }
 
         public string result{ get; set; }
+
+        public string datetime{ get; set; }
     }
 
     public class DecryptItem
@@ -29,6 +31,8 @@ namespace CipherBreakerApi.Models
         public string key{ get; set; }
 
         public string result{ get; set; }
+
+        public string datetime{ get; set; }
     }
 
     public class BreakItem
@@ -42,5 +46,7 @@ namespace CipherBreakerApi.Models
         public string result_str{ get; set; }
 
         public double result_prob{ get; set; }
+
+        public string datetime{ get; set; }
     }
 }
