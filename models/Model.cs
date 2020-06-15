@@ -16,6 +16,7 @@ namespace CipherBreakerApi.Models
 
         public string result{ get; set; }
 
+        [Key,Column(Order = 3)]
         public string datetime{ get; set; }
     }
 
@@ -32,6 +33,7 @@ namespace CipherBreakerApi.Models
 
         public string result{ get; set; }
 
+        [Key,Column(Order = 3)]
         public string datetime{ get; set; }
     }
 
@@ -47,6 +49,7 @@ namespace CipherBreakerApi.Models
 
         public double result_prob{ get; set; }
 
+        [Key,Column(Order = 2)]
         public string datetime{ get; set; }
     }
 }

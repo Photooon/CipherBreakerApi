@@ -44,6 +44,8 @@
 
    例：http://www.mortyw.cn/cipherbreaker/api/break
 
-#### 获取词频：
+#### 获取历史数据：
 
-​	未完成
+1. EncryptItem
+2. DecryptItem
+3. BreakItem
