@@ -10,9 +10,9 @@ namespace CipherBreakerApi.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<EncryptItem>().HasKey(t => new { t.method, t.str, t.key});      //组合主键
-            modelBuilder.Entity<DecryptItem>().HasKey(t => new { t.method, t.str, t.key });
-            modelBuilder.Entity<BreakItem>().HasKey(t => new { t.method, t.str });
+            //modelBuilder.Entity<EncryptItem>().HasKey(t => new { t.method, t.str, t.key});      //组合主键
+            //modelBuilder.Entity<DecryptItem>().HasKey(t => new { t.method, t.str, t.key });
+            //modelBuilder.Entity<BreakItem>().HasKey(t => new { t.method, t.str });
             base.OnModelCreating(modelBuilder);
         }
 
