@@ -5,7 +5,7 @@ namespace CipherBreakerApi.Models
 {
     public class EncryptItem
     {
-        [Key,Column(Order = 0)]
+        [Key]
         public string datetime{ get; set; }
 
         //[Key,Column(Order = 0)]
@@ -22,7 +22,7 @@ namespace CipherBreakerApi.Models
 
     public class DecryptItem
     {
-        [Key,Column(Order = 0)]
+        [Key]
         public string datetime{ get; set; }
 
         //[Key,Column(Order = 0)]
@@ -39,7 +39,7 @@ namespace CipherBreakerApi.Models
 
     public class BreakItem
     {
-        [Key,Column(Order = 0)]
+        [Key]
         public string datetime{ get; set; }
 
         //[Key,Column(Order = 0)]
