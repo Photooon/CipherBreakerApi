@@ -184,7 +184,7 @@ namespace CipherBreakerApi.Controllers
                     
                     var result = caesar.Break(str);
 
-                    SaveBreakItems(method, str, result.Item1, result.Item2);
+                    //SaveBreakItems(method, str, result.Item1, result.Item2);
 
                     return result.Item1 + "," + result.Item2.ToString();
                 }
