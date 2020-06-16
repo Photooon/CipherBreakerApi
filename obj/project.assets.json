@@ -1124,11 +1124,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Code Manager\\CipherBreaker\\CipherBreakerApi\\CipherBreakerApi.csproj",
+      "projectUniqueName": "F:\\Code Manager\\CipherBreakerApi\\CipherBreakerApi.csproj",
       "projectName": "CipherBreakerApi",
-      "projectPath": "F:\\Code Manager\\CipherBreaker\\CipherBreakerApi\\CipherBreakerApi.csproj",
+      "projectPath": "F:\\Code Manager\\CipherBreakerApi\\CipherBreakerApi.csproj",
       "packagesPath": "C:\\Users\\15278\\.nuget\\packages\\",
-      "outputPath": "F:\\Code Manager\\CipherBreaker\\CipherBreakerApi\\obj\\",
+      "outputPath": "F:\\Code Manager\\CipherBreakerApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\",
