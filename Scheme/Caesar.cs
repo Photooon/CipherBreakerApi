@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CipherBreakerApi
+namespace CipherBreaker
 {
 	class Caesar : SymmetricScheme
 	{
@@ -175,6 +175,12 @@ namespace CipherBreakerApi
 		public override string ToString()
 		{
 			throw new NotImplementedException();
+		}
+
+		public override string GenerateKey()
+		{
+			Random rand = new Random();
+			return rand.Next(Scheme.LetterSetSize).ToString();
 		}
 	}
 }

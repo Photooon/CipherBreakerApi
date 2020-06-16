@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CipherBreakerApi
+namespace CipherBreaker
 {
     class Substitution : SymmetricScheme
     {
@@ -142,6 +142,7 @@ namespace CipherBreakerApi
         {
             throw new NotImplementedException();
         }
+
         public override bool Save(string fileName)
         {
             throw new NotImplementedException();
@@ -152,6 +153,11 @@ namespace CipherBreakerApi
         }
 
         public override string ToString()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string GenerateKey()
         {
             throw new NotImplementedException();
         }

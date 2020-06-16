@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Collections.Concurrent;
+using System.Configuration;
+using System.Net;
 
-namespace CipherBreakerApi
+namespace CipherBreaker
 {
-	enum SchemeType
+	public enum SchemeType
 	{
 		Caesar,
 		Vigenere,
 		Substitution,
 		Transposition,
 		RailFence,
-		Columnar
+		Columnar,
+		Affine
 	}
 
 	enum SchemeState
@@ -29,7 +32,7 @@ namespace CipherBreakerApi
 	{
 		protected string name;
 
-		protected const int LetterSetSize = 26;
+		public const int LetterSetSize = 26;
 
 		protected static Dictionary<SchemeType, int> schemeCount = new Dictionary<SchemeType, int>();
 
@@ -96,6 +99,29 @@ namespace CipherBreakerApi
 			return schemeCount[type];
 		}
 
-		public new abstract string ToString();
+		public override abstract string ToString();
+
+		public static Scheme ChooseScheme(string plain)
+		{
+			return new RailFence();
+		}
+
+		public static Scheme NewScheme(SchemeType type, string plain = null, string cipher = null, string key = null)
+		{
+			switch (type)
+			{
+				case SchemeType.Caesar:
+					return new Caesar(plain, cipher, key);
+				case SchemeType.Affine:
+					return new Affine(plain, cipher, key);
+				case SchemeType.RailFence:
+					return new RailFence(plain, cipher, key);
+				case SchemeType.Substitution:
+					return new Substitution(plain, cipher, key);
+			}
+
+			return new RailFence(plain, cipher, key);
+		}
 	}
+
 }

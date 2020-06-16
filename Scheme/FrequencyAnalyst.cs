@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Runtime.CompilerServices;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
-using CipherBreakerApi.Store;
+using CipherBreaker.Store;
 using Microsoft.Data.Sqlite;
 
-namespace CipherBreakerApi
+namespace CipherBreaker
 {
 	class FrequencyAnalyst
 	{
@@ -33,8 +34,19 @@ namespace CipherBreakerApi
 				(var word, var freq) = (wordList[i], frequencyList[i]);
 				if (word.Length >= 4)
 				{
-					freqs[0][word] = freq;
-					totalCounts[0] += freq;
+					for (int j = 0; j < word.Length - 4; j++)
+					{
+						string sub = word.Substring(j, 4);
+						if (freqs[0].ContainsKey(sub))
+						{
+							freqs[0][sub] += freq;
+						}
+						else
+						{
+							freqs[0][sub] = freq;
+						}
+						totalCounts[0] += freq;
+					}
 				}
 				else
 				{
@@ -88,37 +100,34 @@ namespace CipherBreakerApi
 				Init();
 			}
 
-			var strList = str.Split(' ');
+			str = Regex.Replace(str, @"\s", "");
 
-			foreach (string s in strList)
+			if (str.Length >= 4)
 			{
-				if (s.Length >= 4)
+				for (int i = 0; i < str.Length - 4; i++)
 				{
-					for (int i = 0; i < str.Length - 4; i++)
-					{
-						string quad = str.Substring(i, 4).ToUpper();
-						long frequency = freqs[0].GetValueOrDefault(quad);
-						if (frequency == 0)
-						{
-							prob += Math.Log(1.0 / totalCounts[0] / 2.0);
-						}
-						else
-						{
-							prob += Math.Log((double)frequency / totalCounts[0]);
-						}
-					}
-				}
-				else
-				{
-					long frequency = freqs[s.Length].GetValueOrDefault(s);
+					string quad = str.Substring(i, 4).ToUpper();
+					long frequency = freqs[0].GetValueOrDefault(quad);
 					if (frequency == 0)
 					{
-						prob += Math.Log(1.0 / totalCounts[s.Length] / 2.0);
+						prob += Math.Log(1.0 / totalCounts[0] / 2.0);
 					}
 					else
 					{
-						prob += Math.Log((double)frequency / totalCounts[s.Length]);
+						prob += Math.Log((double)frequency / totalCounts[0]);
 					}
+				}
+			}
+			else
+			{
+				long frequency = freqs[str.Length].GetValueOrDefault(str);
+				if (frequency == 0)
+				{
+					prob += Math.Log(1.0 / totalCounts[str.Length] / 2.0);
+				}
+				else
+				{
+					prob += Math.Log((double)frequency / totalCounts[str.Length]);
 				}
 			}
 

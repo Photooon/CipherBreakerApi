@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CipherBreakerApi
+namespace CipherBreaker
 {
 	class Affine : SymmetricScheme
 	{
@@ -14,14 +14,14 @@ namespace CipherBreakerApi
 				key = this.Key;
 			}
 
-			string[] ab = key.Split(',');   //"a,b"ï¿½ï¿½ï¿½ï¿½ï¿½Ý¶ï¿½ï¿½Å·Ö¸ï¿½ï¿½Ö·ï¿½ï¿½ï¿½keyï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½0
+			string[] ab = key.Split(',');   //"a,b"£¬¸ù¾Ý¶ººÅ·Ö¸î×Ö·û´®key£¬µÚÒ»¸öÊýÎª³ËÊý£¬µÚ¶þ¸öÊýÎª¼ÓÊý0
 			int aInt = int.Parse(ab[0]);
 			return NumberTheory.Gcd(aInt, Scheme.LetterSetSize) == 1;
 		}
 
 		public Affine(string plain = null, string cipher = null, string key = null) : base(plain, cipher, key)
 		{
-
+			Type = SchemeType.Affine;
 		}
 
 		~Affine()
@@ -56,10 +56,10 @@ namespace CipherBreakerApi
 				return (null, false);
 			}
 
-			string[] ab = key.Split(',');   //"a,b"ï¿½ï¿½ï¿½ï¿½ï¿½Ý¶ï¿½ï¿½Å·Ö¸ï¿½ï¿½Ö·ï¿½ï¿½ï¿½keyï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½0
+			string[] ab = key.Split(',');   //"a,b"£¬¸ù¾Ý¶ººÅ·Ö¸î×Ö·û´®key£¬µÚÒ»¸öÊýÎª³ËÊý£¬µÚ¶þ¸öÊýÎª¼ÓÊý0
 			int aInt = int.Parse(ab[0]);
 			int bInt = int.Parse(ab[1]);
-			string cipher = "";
+			string cipher = "";  
 			foreach (char p in plain)
 			{
 				int c = p;
@@ -97,7 +97,7 @@ namespace CipherBreakerApi
 				return (null, false);
 			}
 
-			string[] ab = key.Split(',');   //"a,b"ï¿½ï¿½ï¿½ï¿½ï¿½Ý¶ï¿½ï¿½Å·Ö¸ï¿½ï¿½Ö·ï¿½ï¿½ï¿½keyï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½0
+			string[] ab = key.Split(',');   //"a,b"£¬¸ù¾Ý¶ººÅ·Ö¸î×Ö·û´®key£¬µÚÒ»¸öÊýÎª³ËÊý£¬µÚ¶þ¸öÊýÎª¼ÓÊý0
 			int aInt = int.Parse(ab[0]);
 			int bInt = int.Parse(ab[1]);
 			string plain = "";
@@ -106,7 +106,7 @@ namespace CipherBreakerApi
 				int p = c;
 				if (c >= 'a' && c <= 'z')
 				{
-					if (NumberTheory.Gcd(aInt, Scheme.LetterSetSize) == 1)  //Ö»ï¿½Ðµï¿½ a ï¿½ï¿½ n ï¿½ï¿½ï¿½Øµï¿½Ê±ï¿½ï¿½, a ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½
+					if (NumberTheory.Gcd(aInt, Scheme.LetterSetSize) == 1)  //Ö»ÓÐµ± a Óë n »¥ËØµÄÊ±ºò, a ²ÅÊÇÓÐÄ£ÄæµÄ
 					{
 						int cInt = (int)NumberTheory.Inverse(aInt, Scheme.LetterSetSize);
 						p = (((c - 'a' - bInt) * cInt) % Scheme.LetterSetSize) + 'a';
@@ -114,7 +114,7 @@ namespace CipherBreakerApi
 				}
 				else if (c >= 'A' && c <= 'Z')
 				{
-					if (NumberTheory.Gcd(aInt, Scheme.LetterSetSize) == 1)  //Ö»ï¿½Ðµï¿½ a ï¿½ï¿½ n ï¿½ï¿½ï¿½Øµï¿½Ê±ï¿½ï¿½, a ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½
+					if (NumberTheory.Gcd(aInt, Scheme.LetterSetSize) == 1)  //Ö»ÓÐµ± a Óë n »¥ËØµÄÊ±ºò, a ²ÅÊÇÓÐÄ£ÄæµÄ
 					{
 						int cInt = (int)NumberTheory.Inverse(aInt, Scheme.LetterSetSize);
 						p = (((c - 'A' - bInt) * cInt) % Scheme.LetterSetSize) + 'A';
@@ -132,7 +132,40 @@ namespace CipherBreakerApi
 
 		public override (string, double) Break(string cipher = null)
 		{
-			throw new NotImplementedException();
+			if (cipher == null)
+			{
+				cipher = this.Cipher;
+			}
+
+			string plain = cipher;
+			double maxProb = FrequencyAnalyst.Analyze(cipher);
+
+			for (int i = 0; i < LetterSetSize; i++)
+			{
+				if (NumberTheory.Gcd(i, LetterSetSize) == 1)
+				{
+					for (int j = 0; j < LetterSetSize; j++)
+					{
+						string a = i.ToString();
+						string b = j.ToString();
+						string ab = a + "," + b;
+						(string str, bool ok) result = Decode(cipher, ab);
+						if (result.ok)
+						{
+							double prob = FrequencyAnalyst.Analyze(result.str);
+							if (prob > maxProb)
+							{
+								plain = result.str;
+								maxProb = prob;
+							}
+						}
+					}
+				}
+			}
+
+			this.Plain = plain;
+			return (plain, Math.Pow(Math.E, maxProb));
+			//throw new NotImplementedException();
 		}
 		public override bool Save(string fileName)
 		{
@@ -144,6 +177,11 @@ namespace CipherBreakerApi
 		}
 
 		public override string ToString()
+		{
+			throw new NotImplementedException();
+		}
+
+		public override string GenerateKey()
 		{
 			throw new NotImplementedException();
 		}

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 
-namespace CipherBreakerApi
+namespace CipherBreaker
 {
 	abstract class SymmetricScheme : Scheme
 	{
@@ -15,6 +15,8 @@ namespace CipherBreakerApi
 		}
 		public virtual string Key { get => key; set => key = value; }
 		protected abstract bool keyIsValid(string key = null);
+
+		public abstract string GenerateKey();
 		public override abstract (string, double) Break(string cipher = null);
 
 		public override abstract (string, bool) Decode(string cipher = null, string key = null);
