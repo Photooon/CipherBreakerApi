@@ -9,7 +9,7 @@ using CipherBreakerApi;
 
 namespace CipherBreakerApi.Controllers
 {
-    [ApiController]
+    [ApiControsysller]
     [Route("[controller]/api")]
     public class CipherBreakerController : ControllerBase
     {
